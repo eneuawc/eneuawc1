@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>☆きょうのラッキーアイテム☆</title>
+</head>
+
+<body>
+
+<div class="container-mb mt-3">
+  <div class="row">
+    <h1 class="mt-3 mb-3 text-center">⭐️今日のラッキーアイテム⭐️</h1>
+  </div>
+
+<div class="mt-3 mb-3 form-group row">
+  <label for="color" class="form-label col-1">好きな色を教えてください</label>
+  <div class="col-5">
+    <input type="text" class="form-control" id="color" size="20" maxlength="30">
+  </div>
+</div>
+
+<div class="mt-3 mb-3 form-group row">
+  <label for="HPB" class="form-control" id="HPB">誕生日を教えてください</label>
+  <div>
+    <input type="date" class="form-control" id="HPB">
+  </div>
+</div>
+
+  <button id="playBtn" onclick="play()">うらなう</button>
+  <img src="無題606.jpg" id="rakki">
+
+  <style>
+    body{
+     background-color: #e7ddfb;
+    }
+
+    button{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  margin: 1em 0;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  background-color: #a68cdc;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 0;
+  transition: 0.3s;
+
+  #rakki{
+    width: 70%;
+  }
+
+ }
+
+ button:hover{
+  background-color: #8355e5;
+ }
+
+img{
+  width: 500px;
+}
+
+.hide{
+  display: none;
+}
+   </style>
+
+</body>
+
+<head>
+  <!--スクリプト1-->
+  <script language="JavaScript">
+    <!--
+    function play(){
+
+      var no = Math.floor(Math.random() * 6);
+      console.log(no);
+
+      alert("これがあれば一日ラッキー！");
+
+      var image_name;
+      if (no == 0){
+          image_name="ushi2.jpeg";
+      } else if (no == 1){
+          image_name="hitsuji2.jpeg";
+      } else if (no == 2){
+          image_name="numa2.jpeg";
+      } else if (no == 3){
+          image_name="hoshi2.jpeg";
+      } else if (no == 4){
+          image_name="laGoconda2.jpeg";
+      } else {
+          image_name="suiren2.jpeg";
+      }
+      console.log(image_name);
+
+    document.getElementById("rakki").src = image_name;
+    document.getElementById("playBtn").innerHTML = "もういちど";
+
+    }
+    // -->
+  </script>
+  <!--ここまで-->
+  
+</head>
+</html>
